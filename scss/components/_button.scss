@@ -1,0 +1,99 @@
+// кнопка герой
+.hero__btn {
+  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  cursor: pointer;
+  border: none;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  background: var(--hover-focus-color);
+  color: var(--background-color);
+
+  transition-property: background-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  color: var(--btn-color-font);
+  background: #188ce8;
+}
+
+// кнопки портфолио
+// .btn-list {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 50px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+.btn-item {
+  margin-right: 8px;
+}
+
+.btn {
+  background: #f5f4fa;
+
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #212121;
+  cursor: pointer;
+  border: none;
+
+  padding: 6px 22px;
+
+  transition-property: background-color, color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--btn-color-font);
+  background-color: var(--hover-focus-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+// модальное окно
+.modal-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: #2196f3;
+}

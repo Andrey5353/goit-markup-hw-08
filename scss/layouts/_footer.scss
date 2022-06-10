@@ -1,0 +1,163 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+// .footer .container {
+
+//   display: flex;
+//   align-items: baseline;
+// }
+
+.footer .container .logo {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.footer__logo--color {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+// .container-address {
+//   margin-right: 70px;
+// }
+
+.address {
+  font-style: normal;
+
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.address__desc {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  margin-bottom: 8px;
+}
+
+.address__item {
+  margin-bottom: 8px;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.address__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
+}
+
+// .sub {
+//   margin-left: 93px;
+// }
+
+.sub__title {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+// .btn__input {
+//   display: flex;
+// }
+
+.sub input {
+  width: 100%;
+  padding: 15px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  border-radius: 4px;
+
+  margin-bottom: 20px;
+
+  //   margin-right: 12px;
+}
+
+.sub__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sub__btn {
+  display: block;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  border: none;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 10px;
+  padding-right: 62px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+
+  background: var(--hover-focus-color);
+  color: var(--background-color);
+
+  transition-property: background-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.sub__btn:hover,
+.sub__btn:focus {
+  background-color: #188ce8;
+}
+
+.sub-btn-cont {
+  position: relative;
+}
+
+.sub-btn-icon {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translate(-50%, -50%);
+
+  fill: #ffffff;
+}

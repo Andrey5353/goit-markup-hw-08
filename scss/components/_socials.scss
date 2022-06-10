@@ -1,0 +1,100 @@
+// наша команда
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-list__item {
+  margin-right: 10px;
+}
+
+.socials-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-focus-color);
+  }
+  &:hover .socials-list__icon,
+  &:focus .socials-list__icon {
+    fill: var(--btn-color-font);
+  }
+}
+
+.socials-list__icon {
+  fill: #afb1b8;
+
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+// подвал
+
+.container-socials {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.container-socials__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.container-socials__socials {
+  display: flex;
+  justify-content: center;
+}
+
+.container-socials__item {
+  margin-right: 10px;
+}
+
+.container-socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  &:hover .container-socials__icon,
+  &:focus .container-socials__icon {
+    fill: var(--btn-color-font);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-focus-color);
+  }
+}
+
+.container-socials__icon {
+  fill: #ffffff;
+
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
