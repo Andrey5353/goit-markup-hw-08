@@ -117,6 +117,7 @@
 }
 
 .sub__btn {
+  position: relative;
   display: block;
   border-radius: 4px;
 
@@ -147,10 +148,6 @@
 .sub__btn:hover,
 .sub__btn:focus {
   background-color: #188ce8;
-}
-
-.sub-btn-cont {
-  position: relative;
 }
 
 .sub-btn-icon {
