@@ -60,12 +60,13 @@
   transition-property: background-color, color, box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-}
-.btn:hover,
-.btn:focus {
-  color: var(--btn-color-font);
-  background-color: var(--hover-focus-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    color: var(--btn-color-font);
+    background-color: var(--hover-focus-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 // модальное окно
