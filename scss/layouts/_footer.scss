@@ -96,7 +96,11 @@
 // }
 
 .sub input {
+  display: block;
   width: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -143,11 +147,11 @@
   transition-property: background-color, color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-}
 
-.sub__btn:hover,
-.sub__btn:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .sub-btn-icon {
