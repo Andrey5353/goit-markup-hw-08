@@ -32,10 +32,20 @@
 // кнопки портфолио
 .btn-list {
   display: flex;
-  flex-wrap: wrap;
-  width: 370px;
-  margin-top: 60px;
-  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 370px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
 }
 
 .btn-item {
@@ -43,6 +53,10 @@
   margin-bottom: 15px;
 
   &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 }

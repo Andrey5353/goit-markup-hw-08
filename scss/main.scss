@@ -4,11 +4,6 @@
 @import "./base/container";
 @import "./base/section";
 
-// utils
-@import "./utils/vars";
-@import "./utils/_visually-hidden";
-@import "./utils/current";
-
 // components
 @import "./components/button";
 @import "./components/socials";
@@ -25,3 +20,8 @@
 @import "./layouts/footer";
 @import "./layouts/projects";
 @import "./layouts/mobile-menu";
+
+// utils
+@import "./utils/vars";
+@import "./utils/_visually-hidden";
+@import "./utils/current";
