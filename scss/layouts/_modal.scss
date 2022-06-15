@@ -35,6 +35,10 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1199px) {
+    max-width: 528px;
+  }
 }
 
 .js-speaker-form {
@@ -188,6 +192,11 @@
   letter-spacing: 0.03em;
 
   color: #757575;
+
+  @media screen and (min-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-link {
@@ -197,6 +206,11 @@
   text-decoration-line: underline;
 
   color: #2196f3;
+
+  @media screen and (min-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .custom-checkbox {

@@ -38,6 +38,10 @@
 .nav__list {
   display: flex;
   margin: 0;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .nav__item {
@@ -88,15 +92,25 @@
     display: none;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-left: auto;
   }
 }
 
 .contacts__item {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 10px;
     padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 30px;
   }
 }
 
@@ -123,8 +137,13 @@
     color: var(--hover-focus-color);
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

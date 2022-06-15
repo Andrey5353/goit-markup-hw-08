@@ -2,12 +2,26 @@
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
 }
 
@@ -18,7 +32,7 @@
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 354px;
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
@@ -31,6 +45,12 @@
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    margin-bottom: 0;
+    margin-right: 30px;
   }
 }
 
